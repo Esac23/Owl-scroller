@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Values</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 5px;
+            background-color: #80cdaf;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer{
+            text-align: center;
+            margin-top: 5px;
+            background-color: #80cdaf;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .circle-values {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #18bc9c 0%, #2c3e50 100%);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 1200px;
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .circle-cards-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+
+        .circle-card {
+            text-align: center;
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            width: 200px;
+            margin: 20px;
+            cursor: pointer;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .circle-card video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .circle-card:hover video {
+            transform: scale(1.05);
+        }
+
+        .circle-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .circle-card:hover::before {
+            opacity: 1;
+        }
+
+        .circle-card:hover {
+            transform: scale(1.05) translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            background-color: #f9f9f9;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .circle-card:hover h3 {
+            color: #18bc9c;
+        }
+
+        p {
+            color: #7f8c8d;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .circle-card {
+                width: 180px;
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .circle-card {
+                width: 150px;
+                margin: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .circle-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .circle-values {
+                padding: 20px;
+            }
+        }
+
+        .details_card {
+            margin-bottom: 0%;
+        }
+
+        .ntcp_detail.container-fluid {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ntcp_detail container-fluid">
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="heading">
+                <div data-aos="zoom-out">
+                    <h1>Core Values</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="details_card">
+        <div class="circle-values">
+            <div class="circle-cards-container">
+                <div class="circle-card">
+                    <video
+                        src="https://cdnl.iconscout.com/lottie/premium/thumb/human-integrity-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--equilibrium-balance-mind-principle-mentality-pack-healthcare-medical-icons-5293544.mp4"
+                        controls autoplay muted loop></video>
+                    <div data-aos="zoom-in-up">
+                        <h3>Integrity</h3>
+                        <p>सत्यनिष्ठा</p>
+                    </div>
+                </div>
+
+                <div class="circle-card">
+                    <video
+                        src="https://cdnl.iconscout.com/lottie/premium/thumb/target-customer-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--audience-user-focus-segmentation-market-digital-marketing-pack-business-management-icons-8130704.mp4"
+                        controls autoplay muted loop></video>
+                    <div data-aos="zoom-in-up">
+                        <h3>Customer Focus</h3>
+                        <p>ग्राहक को प्रधानता</p>
+                    </div>
+                </div>
+
+                <div class="circle-card">
+                    <video
+                        src="https://cdnl.iconscout.com/lottie/premium/thumb/people-network-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--connection-hierarchy-group-strategy-pack-business-icons-9891543.mp4"
+                        controls autoplay muted loop></video>
+                    <div data-aos="zoom-in-up">
+                        <h3>Organisational Pride</h3>
+                        <p>संगठन पर गौरव</p>
+                    </div>
+                </div>
+
+                <div class="circle-card">
+                    <video
+                        src="https://cdnl.iconscout.com/lottie/premium/thumb/handshake-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--deal-agreement-partnership-business-contract-real-estate-pack-buildings-icons-9822449.mp4"
+                        controls autoplay muted loop></video>
+                    <div data-aos="zoom-in-up">
+                        <h3>Mutual Respect & Trust</h3>
+                        <p>परस्पर आदर एवं विश्वास</p>
+                    </div>
+                </div>
+
+                <div class="circle-card">
+                    <video
+                        src="https://cdnl.iconscout.com/lottie/premium/preview-watermark/learning-idea-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--education-innovation-creative-career-and-hr-pack-business-icons-6639042.mp4"
+                        controls autoplay muted loop></video>
+                    <div data-aos="zoom-in-up">
+                        <h3>Innovation & Learning</h3>
+                        <p>नवप्रवर्तन एवं ज्ञानार्जन</p>
+                    </div>
+                </div>
+
+                <div class="circle-card">
+                    <video
+                        src="https://cdnl.iconscout.com/lottie/premium/thumb/quality-management-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--control-assurance-supervision-team-ui-pack-user-interface-icons-8607607.mp4"
+                        controls autoplay muted loop></video>
+                    <div data-aos="zoom-in-up">
+                        <h3>Total Quality & Safety</h3>
+                        <p>संपूर्ण गुणवत्ता एवं सुरक्षा</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="ntcp_detail container-fluid">
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="footer">
+                <h1>मूल मान्यताएं</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
